@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Helio Kft Registration Form</title>
+</head>
+<body>
+  <form id="registrationForm">
+    <div class="container">
+      <h1>Helio Kft Registation Form</h1>
+      <hr>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+  
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+      <hr>
+  
+      <button type="button" onclick="registration()" class="registerbtn">Register</button>
+    </div>
+  
+    <div class="container signin">
+      <p>Already have an account? <button type="button" onclick="showLogin()">Login</button>.</p>
+    </div>
+  </form>
+
+  <form id="loginForm" style="display: none;">
+    <div class="container">
+      <h1>Helio Kft Login Form</h1>
+      <hr>
+  
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="logEmail" required>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" id="logPsw" required>
+  
+      <button type="button" onclick="login()" class="loginbtn">Login</button>
+    </div>
+  
+    <div class="container signin">
+      <p>Dont have an account? <button type="button" onclick="showRegister()">Register</button>.</p>
+    </div>
+  </form>
+
+  <script src="main.js"></script>
+</body>
+</html>
